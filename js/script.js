@@ -17,7 +17,7 @@
 
 */
 const elemento = document.querySelector('h3');
-console.log(elemento.innerText);
+console.log(elemento);
 
 /*
   EJERCICIO B: --------------------------------------------
@@ -59,3 +59,12 @@ console.log(SegundaCelda[2]);
 
 const terceracelda = document.querySelectorAll('tr');
 console.log(terceracelda[3]);
+
+
+/* Ejercicio F*/
+
+// Utiliza el for dependiendo de cuantos hijos del padre existan y imprime cada uno de los hijos//
+let foo = document.getElementById('foo');
+for (let i = 0; i < foo.children.length; i++) {
+    console.log(foo.children[i].innerHTML);
+}
